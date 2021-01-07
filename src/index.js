@@ -47,7 +47,7 @@ const stop$ = fromEvent(stopBtn, "click");
 const pause$ = fromEvent(pauseBtn, "click");
 const reset$ = fromEvent(resetBtn, "click");
 
-const doubleClick$ = pause$.pipe(
+const pauseClick$ = pause$.pipe(
   buffer(pause$.pipe(debounceTime(300))),
   map((list) => list.length),
   filter((x) => x === 2)
@@ -55,9 +55,9 @@ const doubleClick$ = pause$.pipe(
 
 const events$ = merge(
   start$.pipe(mapTo({ count: true })),
-  stop$.pipe(mapTo({ count: false })),
-  doubleClick$.pipe(mapTo({ count: false })),
-  reset$.pipe(mapTo({ value: 0 }))
+  stop$.pipe(mapTo({ count: false, value: 0 })),
+  pauseClick$.pipe(mapTo({ count: false })),
+  reset$.pipe(mapTo({ count: true, value: 0 }))
 );
 
 const timer$ = events$.pipe(
