@@ -1,0 +1,31 @@
+{
+  "name": "timer-rxjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ISvirko/timer-rxjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ISvirko/timer-rxjs/issues"
+  },
+  "homepage": "https://github.com/ISvirko/timer-rxjs#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "dependencies": {
+    "rxjs": "^6.6.3"
+  }
+}

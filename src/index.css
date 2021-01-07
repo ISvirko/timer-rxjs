@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: darkolivegreen;
+}
+
+.value {
+  color: rgb(223, 223, 223);
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.controls {
+  display: flex;
+}
+
+button {
+  padding: 10px 0;
+  width: 70px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  transition: all ease-in-out 250ms;
+}
+
+button:hover,
+button:focus {
+  transform: scale(1.05);
+}
+
+button:not(:last-child) {
+  margin-right: 20px;
+}
