@@ -17,12 +17,12 @@
   "bugs": {
     "url": "https://github.com/ISvirko/timer-rxjs/issues"
   },
-  "homepage": "https://github.com/ISvirko/timer-rxjs#readme",
+  "homepage": "https://isvirko.github.io/timer-rxjs/",
   "devDependencies": {
     "html-webpack-plugin": "^4.5.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.11.1",
-    "webpack-cli": "^3.3.7",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.1"
   },
   "dependencies": {
