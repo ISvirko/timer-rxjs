@@ -11,6 +11,8 @@ import {
   filter,
 } from "rxjs/operators";
 
+import "./index.css";
+
 const startBtn = document.getElementById("start");
 const stopBtn = document.getElementById("stop");
 const pauseBtn = document.getElementById("pause");
